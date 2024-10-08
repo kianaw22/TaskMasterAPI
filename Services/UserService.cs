@@ -29,11 +29,21 @@ namespace TaskMasterAPI.Services
         public async Task<User> Authenticate(string username, string password)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
-            if (user == null) return null;
+    
+            if (user == null)
+            {
+                throw new InvalidOperationException("User not found.");
+            }
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
-            return result == PasswordVerificationResult.Success ? user : null;
+            if (result != PasswordVerificationResult.Success)
+            {
+                throw new UnauthorizedAccessException("Invalid password.");
+            }
+
+            return user; // Return a valid user, exceptions handle failures.
         }
+
 
         // 3. Get User by ID with Role-Based Authorization
        

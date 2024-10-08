@@ -292,3 +292,4 @@ C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\refint\TaskMasterAPI.dll
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.pdb
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.genruntimeconfig.cache
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\ref\TaskMasterAPI.dll
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.sourcelink.json
