@@ -71,13 +71,13 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
-            "Microsoft.IdentityModel.Tokens": {
-              "target": "Package",
-              "version": "[8.1.1, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             },
             "microsoft.aspnetcore.identity.entityframeworkcore": {
               "target": "Package",

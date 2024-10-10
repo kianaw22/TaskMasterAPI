@@ -145,6 +145,14 @@ C:\Users\hosseini.k\Desktop\TaskMasterAPI\obj\Debug\net8.0\refint\TaskMasterAPI.
 C:\Users\hosseini.k\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.pdb
 C:\Users\hosseini.k\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.genruntimeconfig.cache
 C:\Users\hosseini.k\Desktop\TaskMasterAPI\obj\Debug\net8.0\ref\TaskMasterAPI.dll
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfo.cs
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.sourcelink.json
 C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\appsettings.json
 C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\TaskMasterAPI.exe
@@ -271,13 +279,6 @@ C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\runtimes\win-arm\native\e_s
 C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.AssemblyReference.cache
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfoInputs.cache
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfo.cs
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.CoreCompileInputs.cache
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\staticwebassets\msbuild.TaskMasterAPI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -292,4 +293,3 @@ C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\refint\TaskMasterAPI.dll
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.pdb
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.genruntimeconfig.cache
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\ref\TaskMasterAPI.dll
-C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.sourcelink.json
