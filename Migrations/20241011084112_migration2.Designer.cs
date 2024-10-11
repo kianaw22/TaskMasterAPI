@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TaskMasterAPI.Data;
 
@@ -10,9 +11,11 @@ using TaskMasterAPI.Data;
 namespace TaskMasterAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241011084112_migration2")]
+    partial class migration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
@@ -85,7 +88,7 @@ namespace TaskMasterAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 100,
+                            Id = 1,
                             AssignedUserId = 1,
                             Description = "This is the first task",
                             Status = "Pending",
@@ -93,7 +96,7 @@ namespace TaskMasterAPI.Migrations
                         },
                         new
                         {
-                            Id = 200,
+                            Id = 2,
                             AssignedUserId = 2,
                             Description = "This is the second task",
                             Status = "Completed",
@@ -127,14 +130,14 @@ namespace TaskMasterAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 100,
+                            Id = 1,
                             PasswordHash = "hashedpassword",
                             Role = "Admin",
                             Username = "admin"
                         },
                         new
                         {
-                            Id = 200,
+                            Id = 2,
                             PasswordHash = "hashedpassword",
                             Role = "User",
                             Username = "user1"

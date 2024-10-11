@@ -13,7 +13,9 @@ namespace TaskMasterAPI.Data  // Data Access Layer namespace
         // Define your DbSet properties (tables) here
         public DbSet<User> Users { get; set; }
         public DbSet<TaskItem> Tasks { get; set; }
-       // Seed data (Optional)
+         public DbSet<GitHubIssueLink> GitHubIssueLinks { get; set; }
+
+       
        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -53,6 +55,9 @@ namespace TaskMasterAPI.Data  // Data Access Layer namespace
                     AssignedUserId = 2
                 }
             );
+        modelBuilder.Entity<GitHubIssueLink>()
+            .Property(g => g.IssueState)
+            .HasConversion<string>();  // This stores the enum as a string in the database
         }
         
     }

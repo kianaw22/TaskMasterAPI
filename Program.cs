@@ -6,6 +6,7 @@ using System.Text;
 using TaskMasterAPI.services;
 using TaskMasterAPI.Services;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Add JWT Authentication
 var loggerFactory = builder.Services.BuildServiceProvider().GetRequiredService<ILoggerFactory>();
 var logger = loggerFactory.CreateLogger<Program>();
+
+builder.Services.AddHttpClient();
 
 builder.Services.AddAuthentication(options =>
     {
@@ -76,6 +79,46 @@ builder.Services.AddAuthentication(options =>
             }
         };
     });
+    builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "TaskMaster API",
+        Description = "API for managing tasks and GitHub issue integration",
+        Contact = new OpenApiContact
+        {
+            Name = "Your Name",
+            Email = "your-email@example.com"
+        }
+    });
+
+    // Configure JWT Bearer authentication for Swagger
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter your JWT with Bearer into field (e.g., 'Bearer {token}')",
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
 //builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
 
@@ -86,10 +129,21 @@ builder.Services.AddHttpContextAccessor();
 
 // Register custom services (UserService, TaskService, etc.)
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IGitHubIssueService, GitHubIssueService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
 
 // Build the application
 var app = builder.Build();
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskMaster API v1");
+        c.RoutePrefix = string.Empty;  // Set Swagger UI to be the root URL of the app
+    });
+}
+
 
 app.UseHttpsRedirection();
 

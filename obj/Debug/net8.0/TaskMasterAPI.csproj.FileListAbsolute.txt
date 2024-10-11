@@ -293,3 +293,6 @@ C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\refint\TaskMasterAPI.dll
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.pdb
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.genruntimeconfig.cache
 C:\Users\Asus\Desktop\TaskMasterAPI\obj\Debug\net8.0\ref\TaskMasterAPI.dll
+C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Asus\Desktop\TaskMasterAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
